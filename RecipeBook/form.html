@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Review Form</title>
+  </head>
+  <body>
+    <header>
+      <h2>Review Form</h2>
+    </header>
+    <form>
+      <section>
+        <label for="recipeName">Which recipe have you tried?</label>
+        <select name="recpipeName" id="recipeName">
+          <option value="chocolateCake">Chocolate Cake</option>
+          <option value="blueberryMuffin">Blueberry Muffin</option>option>
+          <option value="brookie">Brookie</option>
+        </select>
+      </section>
+      <hr>
+
+      <section>
+        <label for="like">Did you like the recipe?</label>
+        <span>Absolutely Yes</span>
+        <input type="range" name="like" id="like" value="0.5" min="0" max="5">
+        <span>Absolutely No</span>
+      </section>
+      <hr>
+
+      <section>
+        <span>Would you try it again?</span><br>
+        <input type="radio" name="try" id="yes" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="try" id="no" value="no">
+        <label for="no">No</label>
+      </section>
+      <hr>
+
+      <section>
+        <label for="extra">Anything else you want to add?</label><br>
+        <textarea id="extra" name="extra" rows="5" cols="50"></textarea>
+      </section>
+      <hr>
+
+      <section>
+        <input type="submit" value="Submit">
+      </section>
+    </form>
+  </body>
+</html>
